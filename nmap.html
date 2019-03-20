@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Page title -->
+	<title>Nmap</title>
+	<!-- Page description -->
+	<meta name="description" content="">
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon  -->
+	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<!-- Include StyleSheets -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <link rel="stylesheet" href="css/custom.css"> -->
+	<script src="js/modernizr.js"></script>
+</head>
+
+<body class="">
+	<!--[if lt IE 8]>
+	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!-- Preloader: uncomment this if you want to show a smooth preloader while the page is loading. Don't forget to add the 'js-preload-me' class on the <body> tag. -->
+	<!-- <div class="preloader js-preloader"><div class="preloader-animation"></div></div>
+ -->
+	<!-- End of Preloader -->
+	<div class="page js-page ">
+		<!-- One Page Sidebar -->
+		<div class="one-page-sidebar">
+			<!-- One Page Sidebar Header -->
+			<div class="one-page-sidebar-header">
+				<!-- One Page Logo -->
+				<div class="one-page-logo">
+					<!-- Logo Image -->
+					<a href="index.html" class="logo-image ">
+							<img src="" alt="Nmap">
+					</a>
+					<!-- End of Logo Image -->
+				</div>
+				<!-- End of One Page Logo -->
+				<!-- One Page Meta -->
+				<div class="one-page-meta">
+					<ul class="one-page-meta-list">
+						<li>
+							<a href="#">
+								<i class="one-page-meta-list-icon fa fa-github-alt"></i>GitHub</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- End of One Page Meta -->
+			</div>
+			<!-- End of One Page Sidebar Header -->
+			<!-- One Page Nav -->
+			<div class="one-page-nav-wrapper js-custom-scrollbar">
+				<ul class="one-page-nav js-one-page-nav js-menu-vertical" data-prepend-to=".js-prepend-mobile-menu">
+					<li class="is-active">
+						<a href="#content" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-thumbs-o-up"></i>
+							</span>Introduction</a>
+					</li>
+					<li class="">
+						<a href="#Arguments" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-download"></i>
+							</span>Arguments</a>
+					</li>
+					<li class="">
+						<a href="#Discovery" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-folder"></i>
+							</span>Discovery</a>
+					</li>
+					<li class="">
+						<a href="#Nmap-Scripts" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-sitemap"></i>
+							</span>Nmap Scripts</a>
+					</li>
+					<li class="">
+						<a href="#Old" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-plug"></i>
+							</span>Old but Gold</a>
+					</li>
+				</ul>
+			</div>
+			<!-- End of One Page Nav -->
+			<!-- One Page Sidebar Footer -->
+			<footer class="one-page-sidebar-footer">
+				Nmap</footer>
+			<!-- End of One Page Sidebar Footer -->
+		</div>
+		<!-- End of One Page Sidebar -->
+		<!-- One Page Content -->
+		<div class="one-page-content">
+			<!-- Header -->
+			<header class="header large header-one-page js-header-fixed">
+				<div class="container-fluid container-spaced">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-5">
+							<div class="visible-sm-block visible-xs-block">
+								<!-- Logo Image -->
+								<a href="index.html" class="logo-image logo-animated">
+									<img src="img/logos/logo.png" alt="logo">
+								</a>
+								<!-- End of Logo Image -->
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-6 col-xs-7">
+	<!-- Menu -->
+	<nav class="right helper">
+			<ul class="menu sf-menu js-menu">
+				<li>
+					<a href="index.html">Home
+						<span class="menu-label">NEW</span>
+					</a>
+					<ul>
+
+						<li>
+							<a href="#">Menu</a>
+							<ul>
+								<li>
+									<a href="#">Null</a>
+								</li>
+								<li>
+									<a href="#">Null</a>
+								</li>
+							</ul>
+						</li>
+
+
+						<li>
+							<a href="#">Null</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="#">Pages</a>
+					<ul>
+						<li>
+							<a href="#">Null</a>
+						</li>
+						<li>
+							<a href="#">Discovery</a>
+							<ul>
+								<li>
+									<a href="nmap.html">nmap</a>
+								</li>
+
+							</ul>
+						</li>
+
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+		<!-- End of Menu -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End of Header -->
+			<div id="content">
+				<div class="container-fluid container-spaced">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="js-prepend-mobile-menu">
+								<!-- The mobile menu will be prepended here -->
+							</div>
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="main-features">
+								<h3 class="category-title"> Introduction
+									<!-- Fragment Identifier -->
+									<a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#main-features">
+										<i class="fa fa-link"></i>
+									</a>
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">  Nmap is a free network discovery tool located on your kali linux machine. A full manual can be found here:  <a href="https://nmap.org/book/man.html">nmap</a>. You might need to reference this if your scans are too obtrusive or for instance: scans show all the hosts as off line. You might need to add somethign like the --disable-arp-ping argument. </p>
+							</div>
+														<!-- Category Info -->
+														<div class="category-info " id="Arguments">
+																<h3 class="category-title"> Arguments
+																	<!-- Fragment Identifier -->
+																	<a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#">
+																		<i class="fa fa-link"></i>
+																	</a>
+																	<!-- End of Fragment Identifier -->
+																</h3>
+																<h4 class="category-description">Here's the a small list of available options you can use to modify your nmap scripts</h4>
+															</div>
+															<!-- End of Caregory Info -->
+															<!-- Table -->
+															<div class="table-responsive">
+																<table class="table table-striped">
+																	<thead>
+																		<tr>
+																			<th>Argument</th>
+																			<th>Evasive</th>
+																			<th>Description</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr class="">
+																			<th scope="row">--disable-arp-ping</th>
+																			<td>True</td>
+																			<td> Use this if you need to disable any arp ping requests.</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-oN/-oX/-oG &lt;file&gt;</th>
+																			<td>Null</td>
+																			<td>Parameter used to save to a file. I prefer -oN.</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">--version-intensity</th>
+																			<td>Null</td>
+																			<td>Evasivness depends on the level of intensity 0-9.</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<!-- End of Table -->
+							<!-- Category Info -->
+							<div class="category-info " id="Discovery">
+									<h3 class="category-title"> Discovery
+										<!-- Fragment Identifier -->
+										<a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#Discovery">
+											<i class="fa fa-link"></i>
+										</a>
+										<!-- End of Fragment Identifier -->	
+									</h3>
+									<h4 class="category-description">Yep, as simple as that.</h4>
+									<p class="category-content"> test </p>
+								</div>
+								<!-- End of Caregory Info -->
+									<!-- Note -->
+										<div class="note js-note green note-pulse">
+										<span class="note-close js-close">
+											<i class="fa fa-times"></i>
+										</span>
+										<h4 class="note-title"> Quick TCP - UDP</h4>
+										<p class="note-description"> Here are some tcp scans that can be usefull when first starting your scans. </p>
+									</div>
+									<!-- End of Note -->
+								<div class="code-highlight " data-label="">
+									<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -T4 -Pn &lt;URL or IP&gt;
+							</code></pre> </div>
+							<!-- Note -->
+							<div class="note js-note note-bounce">
+									<span class="note-close js-close">
+										<i class="fa fa-times"></i>
+									</span>
+									<h4 class="note-title"> Dangerous TCP - UDP </h4>
+									<p class="note-description"> Some of these commands might be dangerous, take a long time, or set off alarms. </p>
+								</div>
+								<!-- End of Note -->
+														<!-- Mixed Code Highlight -->
+						<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -Pn -A -T4 -p1-65535 &lt;URL or IP&gt;
+	</code></pre></div>
+							<!-- End of Mixed Code Highlight -->
+							<div class="category-info " id="Nmap-Scripts">
+								<h3 class="category-title"> Nmap Scripts
+									<!-- Fragment Identifier -->
+									<a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#Nmap-Scripts">
+										<i class="fa fa-link"></i>
+									</a>
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<h4 class="category-description">Let's talk about what's inside the package.</h4>
+								<p class="category-content"> Some usefull Nmap scripts with a minor description. </p>
+							</div>
+							<!-- End of Caregory Info -->
+							<!-- File Tree -->
+							<div class="file-tree">
+								<div class="file-tree-title"> File hierarchy
+									<ul class="file-tree-buttons">
+										<li class="js-expand">
+											<i class="fa fa-plus"></i> Expand all</li>
+										<li class="js-collapse">
+											<i class="fa fa-minus"></i> Collapse all</li>
+									</ul>
+								</div>
+								<ul class="file-tree-list js-file-tree" data-expanded="">
+									<li class="is-folder">SSH -
+										<span class="file-tree-description">SSH Scripts</span>
+										<ul>
+											<li class="is-file">custom.css -
+												<span class="file-tree-description">numquam veniam, soluta vitae magni deserunt velit officiis suscipi</span>
+											</li>
+											<li class="is-file">style.css -
+												<span class="file-tree-description">doloribus sapiente corrupti maxime, praesentium beatae id quisquam qui</span>
+											</li>
+											<li class="is-file">style.min.css -
+												<span class="file-tree-description">sit in ea ducimus numquam culpa. sint qui au</span>
+											</li>
+										</ul>
+									</li>
+									<li class="is-folder">FTP -
+										<span class="file-tree-description">FTP scripts</span>
+										<ul>
+											<li class="is-file">fontawesome.otf -
+												<span class="file-tree-description">nulla, maxime aliquid illum, provident dolores dolor. saepe quo</span>
+											</li>
+											<li class="is-file">fontawesome-webfont.eot -
+												<span class="file-tree-description">recusandae illo fugiat itaque, illum id quasi cupiditate nem</span>
+											</li>
+											<li class="is-file">fontawesome-webfont.svg -
+												<span class="file-tree-description">ipsa quae error voluptates fugiat. vel eius consequatur nequ</span>
+											</li>
+											<li class="is-file">fontawesome-webfont.ttf -
+												<span class="file-tree-description">debitis ea error repellat, sed cupiditate consequatur perspiciatis? ess</span>
+											</li>
+											<li class="is-file">fontawesome-webfont.woff -
+												<span class="file-tree-description">dolor facilis accusamus consequatur necessitatibus itaque aliquam mollitia accusantiu</span>
+											</li>
+											<li class="is-file">fontawesome-webfont.woff2 -
+												<span class="file-tree-description">laborum hic nostrum eveniet rerum cum nesciunt placeat praesentiu</span>
+											</li>
+										</ul>
+									</li>
+									<li class="is-folder">Ciphers -
+										<span class="file-tree-description">Cipher scripts</span>
+										<ul>
+											<li class="is-file">img1.jpg -
+												<span class="file-tree-description">iusto rem iure sunt qui officia quod voluptatum ame</span>
+											</li>
+											<li class="is-file">img2.png -
+												<span class="file-tree-description">consequatur beatae dolorem soluta non nisi, quod ullam molestia</span>
+											</li>
+											<li class="is-file">img3.gif -
+												<span class="file-tree-description">nemo reprehenderit sint deserunt ratione excepturi. fugit a qui</span>
+											</li>
+											<li class="is-file">... -
+												<span class="file-tree-description">maiores cum nobis vitae amet aspernatur a quia eum</span>
+											</li>
+										</ul>
+									</li>
+									<li class="is-folder">Vulnerabilites -
+										<span class="file-tree-description">Vuln check scripts</span>
+										<ul>
+											<li class="is-file">all.js -
+												<span class="file-tree-description">laudantium architecto a voluptatibus impedit veniam ea libero erro</span>
+											</li>
+											<li class="is-file">custom.js -
+												<span class="file-tree-description">beatae molestiae, aut deleniti sit voluptatem maiores facere expedita</span>
+											</li>
+										</ul>
+									</li>
+									<li class="is-folder">SNMP -
+										<span class="file-tree-description">SNMP scripts</span>
+										<ul>
+											<li class="is-file">custom.less -
+												<span class="file-tree-description">animi asperiores, unde veniam doloremque accusamus numquam. alias inventor</span>
+											</li>
+											<li class="is-file">style.less -
+												<span class="file-tree-description">explicabo voluptas molestias nulla hic, ipsa quisquam id ill</span>
+											</li>
+										</ul>
+									</li>
+									<li class="is-folder">SQL -
+										<span class="file-tree-description">SQL scripts</span>
+										<ul>
+											<li class="is-file">zeroclipboard.swf -
+												<span class="file-tree-description">necessitatibus pariatur facere a. soluta sint excepturi expedita corpori</span>
+											</li>
+										</ul>
+									</li>
+									<li class="is-file">index-1.html -
+										<span class="file-tree-description">quis cum ratione laboriosam ducimus iure voluptates quaerat si</span>
+									</li>
+									<li class="is-file">index-2.html -
+										<span class="file-tree-description">omnis ipsa quas vel alias illum nostrum deleniti officiis</span>
+									</li>
+									<li class="is-file">index-3.html -
+										<span class="file-tree-description">libero et id laborum laboriosam dignissimos a! cum molestia</span>
+									</li>
+									<li class="is-file">... -
+										<span class="file-tree-description">quas provident minus, nisi excepturi culpa rerum voluptates e</span>
+									</li>
+								</ul>
+							</div>
+							<!-- End of FIle Tree -->
+						<div class="category-info " id="Old">
+								<h3 class="category-title"> Old but Gold!
+									<!-- Fragment Identifier -->
+									<a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#Old">
+										<i class="fa fa-link"></i>
+									</a>
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<h4 class="category-description">This video really teachs nmap in depth. </h4>
+							</div>
+							<!-- End of Caregory Info -->
+							<!-- Video -->
+							<iframe class="video js-responsive-video" src="https://player.vimeo.com/video/1728216" width="500" height="281" style="border:0" allowfullscreen></iframe>
+							<!-- End of Video -->
+							<!-- Category Info -->
+							<!-- End of Grid view -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of One Page Content -->
+	</div>
+	<script src="js/all.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
