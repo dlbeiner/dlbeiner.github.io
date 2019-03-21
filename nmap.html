@@ -154,7 +154,7 @@
 					<a href="#">Pages</a>
 					<ul>
 						<li>
-							<a href="#">Null</a>
+							<a href="xss.html">XSS</a>
 						</li>
 						<li>
 							<a href="#">Discovery</a>
@@ -193,7 +193,7 @@
 									</a>
 									<!-- End of Fragment Identifier -->
 								</h3>
-								<p class="category-content">  Nmap is a free network discovery tool located on your kali linux machine. A full manual can be found here:  <a href="https://nmap.org/book/man.html">nmap</a>. You might need to reference this if your scans are too obtrusive or for instance: scans show all the hosts as off line. You might need to add somethign like the --disable-arp-ping argument. </p>
+								<p class="category-content">  Nmap is a free network discovery tool located on your kali linux machine. A full manual can be found here:  <a href="https://nmap.org/book/man.html">nmap</a>. You might need to reference this if your scans are too obtrusive or for instance: scans show all the hosts as off line. You might need to add somethign like the --disable-arp-ping argument. To allow your self to copy and paste scanning techniques from this page; set your ip variable: export ip=x.x.x.x.</p>
 							</div>
 														<!-- Category Info -->
 														<div class="category-info " id="Arguments">
@@ -231,7 +231,202 @@
 																		<tr class="">
 																			<th scope="row">--version-intensity</th>
 																			<td>Null</td>
-																			<td>Evasivness depends on the level of intensity 0-9.</td>
+																			<td>Evasivness depends on the level of intensity 0-9</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-il &lt;filename&gt;</th>
+																			<td>Null</td>
+																			<td>Pull's list of ip's from the filename</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-Pn</th>
+																			<td>Null</td>
+																			<td>Treats all hosts as online and skip's host discovery</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sn</th>
+																			<td>Null</td>
+																			<td>Ping Scan - disables port scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-PS/PA/PU/PY &lt;portlist&gt;</th>
+																			<td>Null</td>
+																			<td>TCP SYN/ACK, UDP or SCTP discovery to ports</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-PE/PP/PM</th>
+																			<td>Null</td>
+																			<td>ICMP echo, timestamp, and netmask requests</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-n/-R</th>
+																			<td>Null</td>
+																			<td>Don't do DNS resolution. Always resolve</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sS</th>
+																			<td>Null</td>
+																			<td>TCP SYN scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sT</th>
+																			<td>Null</td>
+																			<td>Connect scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sA</th>
+																			<td>Null</td>
+																			<td>ACK scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sW</th>
+																			<td>Null</td>
+																			<td>Window scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sM</th>
+																			<td>Null</td>
+																			<td>Maimon scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sU</th>
+																			<td>Null</td>
+																			<td>UDP scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sN</th>
+																			<td>Null</td>
+																			<td>TCP Null scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sF</th>
+																			<td>Null</td>
+																			<td>FIN scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sX</th>
+																			<td>Null</td>
+																			<td>Xmas scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-scanflags</th>
+																			<td>Null</td>
+																			<td>Custome TCO flags</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sI zombie host:&lt;port&gt;</th>
+																			<td>Null</td>
+																			<td>Connect scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sY</th>
+																			<td>Null</td>
+																			<td>SCTP INIT scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sZ</th>
+																			<td>Null</td>
+																			<td>COOKIE-ECHO scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sO</th>
+																			<td>Null</td>
+																			<td>IP protocol scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-b &lt;FTP relay host&gt;</th>
+																			<td>Null</td>
+																			<td>Connect scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-p&lt;1-65535&gt;</th>
+																			<td>Null</td>
+																			<td>Specify ports to scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-p U:&lt;port&gt;</th>
+																			<td>Null</td>
+																			<td>Specify UDP ports to scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-F</th>
+																			<td>Null</td>
+																			<td>Fast mode</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-r</th>
+																			<td>Null</td>
+																			<td>Scans ports consecutively</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">--top-ports &lt;number of ports&gt;</th>
+																			<td>Null</td>
+																			<td>Scans a number of most common ports</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sV</th>
+																			<td>Null</td>
+																			<td>Probe open ports to determine service and version information</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sC</th>
+																			<td>Null</td>
+																			<td>Script scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">--script-updatedb</th>
+																			<td>Null</td>
+																			<td>Updates script database</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-O</th>
+																			<td>Null</td>
+																			<td>Enables OS Detection</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-T &lt;0-5&gt;</th>
+																			<td>Null</td>
+																			<td>Set timing. I prefer a timing of 4 for most scans.</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">--scan-delay &lt;time&gt;</th>
+																			<td>Null</td>
+																			<td>Delay time between probes</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-f; --mtu &lt;value&gt;</th>
+																			<td>Null</td>
+																			<td>Frament MTU packets</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-D &lt;decoy&gt;</th>
+																			<td>Null</td>
+																			<td>Cloak scan with decoys.</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-S &lt;ip&gt;</th>
+																			<td>Null</td>
+																			<td>Spoof IP Address</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-g &lt;port&gt;</th>
+																			<td>Null</td>
+																			<td>Use a specified port number</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-sT</th>
+																			<td>Null</td>
+																			<td>Connect scan</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-6</th>
+																			<td>Null</td>
+																			<td>Enables IPv6 scanning</td>
+																		</tr>
+																		<tr class="">
+																			<th scope="row">-A</th>
+																			<td>Null</td>
+																			<td>Enables OS detection</td>
 																		</tr>
 																	</tbody>
 																</table>
@@ -246,8 +441,8 @@
 										</a>
 										<!-- End of Fragment Identifier -->	
 									</h3>
-									<h4 class="category-description">Yep, as simple as that.</h4>
-									<p class="category-content"> test </p>
+									<h4 class="category-description">Let's get started.</h4>
+									<p class="category-content"> This is a compiled list of different scanning techniques. </p>
 								</div>
 								<!-- End of Caregory Info -->
 									<!-- Note -->
@@ -259,9 +454,18 @@
 										<p class="note-description"> Here are some tcp scans that can be usefull when first starting your scans. </p>
 									</div>
 									<!-- End of Note -->
+									<div class="code-highlight " data-label="">
+										<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -T4 -Pn -F $ip
+								</code></pre> </div>
 								<div class="code-highlight " data-label="">
-									<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -T4 -Pn &lt;URL or IP&gt;
+									<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -T4 -Pn $ip
 							</code></pre> </div>
+							<div class="code-highlight " data-label="">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -T4 -Pn -sU $ip
+						</code></pre> </div>
+						<div class="code-highlight " data-label="">
+							<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -T4 -Pn -sU -F $ip
+					</code></pre> </div>
 							<!-- Note -->
 							<div class="note js-note note-bounce">
 									<span class="note-close js-close">
@@ -273,9 +477,64 @@
 								<!-- End of Note -->
 														<!-- Mixed Code Highlight -->
 						<div class="code-highlight">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -Pn -A -T4 -p1-65535 &lt;URL or IP&gt;
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -Pn -A -T4 -p1-65535 $ip
 	</code></pre></div>
+	<div class="code-highlight">
+		<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -sU -Pn -T4 -p1-65535 $ip
+</code></pre></div>
 							<!-- End of Mixed Code Highlight -->
+							<div class="note js-note blue note-pulse">
+								<span class="note-close js-close">
+									<i class="fa fa-times"></i>
+								</span>
+								<h4 class="note-title"> Evasive scanning techniques</h4>
+								<p class="note-description"> Scan techniques to appear "quiter" on the network and bypassing firewalls. </p>
+							</div>
+							<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -Pn -T4 --disable-arp-ping $ip
+						</code></pre></div>
+						<div class="code-highlight">
+							<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -Pn -T4 -sU --disable-arp-ping $ip
+					</code></pre></div>
+					<div class="code-highlight">
+						<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -Pn -T4 --disable-arp-ping -p1-65535 $ip
+				</code></pre></div>
+				<div class="code-highlight">
+					<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -A -Pn -T4 -sU --disable-arp-ping -p1-65535 $ip
+			</code></pre></div>
+			<div class="code-highlight">
+				<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -f $ip
+		</code></pre></div>
+		<div class="code-highlight">
+			<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv --source-port 53 $ip
+	</code></pre></div>
+	<div class="code-highlight">
+		<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv --data-length 24 $ip
+</code></pre></div>
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv --randomize-hosts $ip
+</code></pre></div>
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv --mtu 24 $ip
+</code></pre></div>
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv sS -Pn $ip
+</code></pre></div>
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv sA -Pn $ip
+</code></pre></div>
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv sX -Pn $ip
+</code></pre></div>
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -D RND: $ip
+</code></pre></div>
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv -sI $zombie $ip
+</code></pre></div>
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">nmap -vv --badsum $ip
+</code></pre></div>
 							<div class="category-info " id="Nmap-Scripts">
 								<h3 class="category-title"> Nmap Scripts
 									<!-- Fragment Identifier -->
@@ -285,7 +544,7 @@
 									<!-- End of Fragment Identifier -->
 								</h3>
 								<h4 class="category-description">Let's talk about what's inside the package.</h4>
-								<p class="category-content"> Some usefull Nmap scripts with a minor description. </p>
+								<p class="category-content"> Some usefull Nmap scripts with a minor description. You can use: ----- locate *.nse | grep smb ----- to find scripts such as http, webdav, etc..</p>
 							</div>
 							<!-- End of Caregory Info -->
 							<!-- File Tree -->
@@ -302,99 +561,231 @@
 									<li class="is-folder">SSH -
 										<span class="file-tree-description">SSH Scripts</span>
 										<ul>
-											<li class="is-file">custom.css -
-												<span class="file-tree-description">numquam veniam, soluta vitae magni deserunt velit officiis suscipi</span>
+											<li class="is-file">ssh-auth-methods.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ssh-auth-methods.nse $ip</span>
 											</li>
-											<li class="is-file">style.css -
-												<span class="file-tree-description">doloribus sapiente corrupti maxime, praesentium beatae id quisquam qui</span>
+											<li class="is-file">ssh-brute.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ssh-brute.nse $ip</span>
 											</li>
-											<li class="is-file">style.min.css -
-												<span class="file-tree-description">sit in ea ducimus numquam culpa. sint qui au</span>
+											<li class="is-file">ssh-hostkey.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ssh-hostkey.nse $ip</span>
+											</li>
+											<li class="is-file">ssh-publickey-acceptance.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ssh-publickey-acceptance.nse $ip</span>
+											</li>
+											<li class="is-file">ssh-run.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ssh-run.nse $ip</span>
+											</li>
+											<li class="is-file">ssh2-enum-algos.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ssh2-enum-algos.nse $ip</span>
+											</li>
+											<li class="is-file">sshv1.nse -
+												<span class="file-tree-description">nmap -p 21 --script=sshv1.nse $ip</span>
 											</li>
 										</ul>
 									</li>
 									<li class="is-folder">FTP -
 										<span class="file-tree-description">FTP scripts</span>
 										<ul>
-											<li class="is-file">fontawesome.otf -
-												<span class="file-tree-description">nulla, maxime aliquid illum, provident dolores dolor. saepe quo</span>
+											<li class="is-file">ftp-anon.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ftp-anon.nse $ip</span>
 											</li>
-											<li class="is-file">fontawesome-webfont.eot -
-												<span class="file-tree-description">recusandae illo fugiat itaque, illum id quasi cupiditate nem</span>
+											<li class="is-file">ftp-bounce.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ftp-bounce.nse $ip</span>
 											</li>
-											<li class="is-file">fontawesome-webfont.svg -
-												<span class="file-tree-description">ipsa quae error voluptates fugiat. vel eius consequatur nequ</span>
+											<li class="is-file">ftp-brute.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ftp-brute.nse $ip</span>
 											</li>
-											<li class="is-file">fontawesome-webfont.ttf -
-												<span class="file-tree-description">debitis ea error repellat, sed cupiditate consequatur perspiciatis? ess</span>
+											<li class="is-file">ftp-proftpd-backdoor.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ftp-proftpd-backdoor.nse $ip</span>
 											</li>
-											<li class="is-file">fontawesome-webfont.woff -
-												<span class="file-tree-description">dolor facilis accusamus consequatur necessitatibus itaque aliquam mollitia accusantiu</span>
+											<li class="is-file">ftp-vsftpd-backdoor.nse -
+												<span class="file-tree-description">nmap -p 21 --script=ftp-vsftpd-backdoor.nse $ip</span>
 											</li>
-											<li class="is-file">fontawesome-webfont.woff2 -
-												<span class="file-tree-description">laborum hic nostrum eveniet rerum cum nesciunt placeat praesentiu</span>
+											<li class="is-file">ftp-vuln* -
+												<span class="file-tree-description">nmap -p 21 --script=ftp-vuln* $ip</span>
+											</li>
+											<li class="is-file">tftp-enum.nse -
+												<span class="file-tree-description">nmap -p 21 --script=tftp-enum.nse $ip</span>
 											</li>
 										</ul>
 									</li>
 									<li class="is-folder">Ciphers -
 										<span class="file-tree-description">Cipher scripts</span>
 										<ul>
-											<li class="is-file">img1.jpg -
-												<span class="file-tree-description">iusto rem iure sunt qui officia quod voluptatum ame</span>
+											<li class="is-file">ssl-enum-ciphers.nse -
+												<span class="file-tree-description">nmap -p 443 --script=ssl-enum-ciphers.nse $ip</span>
 											</li>
-											<li class="is-file">img2.png -
-												<span class="file-tree-description">consequatur beatae dolorem soluta non nisi, quod ullam molestia</span>
-											</li>
-											<li class="is-file">img3.gif -
-												<span class="file-tree-description">nemo reprehenderit sint deserunt ratione excepturi. fugit a qui</span>
-											</li>
-											<li class="is-file">... -
-												<span class="file-tree-description">maiores cum nobis vitae amet aspernatur a quia eum</span>
-											</li>
-										</ul>
-									</li>
-									<li class="is-folder">Vulnerabilites -
-										<span class="file-tree-description">Vuln check scripts</span>
-										<ul>
-											<li class="is-file">all.js -
-												<span class="file-tree-description">laudantium architecto a voluptatibus impedit veniam ea libero erro</span>
-											</li>
-											<li class="is-file">custom.js -
-												<span class="file-tree-description">beatae molestiae, aut deleniti sit voluptatem maiores facere expedita</span>
-											</li>
+
 										</ul>
 									</li>
 									<li class="is-folder">SNMP -
 										<span class="file-tree-description">SNMP scripts</span>
 										<ul>
-											<li class="is-file">custom.less -
-												<span class="file-tree-description">animi asperiores, unde veniam doloremque accusamus numquam. alias inventor</span>
+											<li class="is-file">snmp-brute.nse -
+												<span class="file-tree-description">nmap -p 161 --script=snmp-brute.nse $ip</span>
 											</li>
-											<li class="is-file">style.less -
-												<span class="file-tree-description">explicabo voluptas molestias nulla hic, ipsa quisquam id ill</span>
+											<li class="is-file">snmp-processes.nse -
+												<span class="file-tree-description">nmap -p 161 --script=snmp-processes.nse $ip</span>
+											</li>
+											<li class="is-file">snmp-info.nse -
+												<span class="file-tree-description">nmap -p 161 --script=snmp-info.nse $ip</span>
+											</li>
+											<li class="is-file">snmp-win32* -
+												<span class="file-tree-description">nmap -p 161 --script=snmp-win32* $ip</span>
+											</li>
+										</ul>
+									</li>
+									<li class="is-folder">SMTP -
+										<span class="file-tree-description">SMTP scripts</span>
+										<ul>
+											<li class="is-file">smtp-brute.nse -
+												<span class="file-tree-description">nmap -p 25 --script=smtp-brute.nse $ip</span>
+											</li>
+											<li class="is-file">smtp-commands.nse -
+												<span class="file-tree-description">nmap -p 25 --script=smtp-commands.nse $ip</span>
+											</li>
+											<li class="is-file">smtp-enum-users -
+												<span class="file-tree-description">nmap -p 25 --script=smtp-enum-users.nse $ip</span>
+											</li>
+											<li class="is-file">smtp-ntlm-info.nse -
+												<span class="file-tree-description">nmap -p 25 --script=smtp-ntlm-info.nse $ip </span>
+											</li>
+											<li class="is-file">smtp-vuln* -
+												<span class="file-tree-description">nmap -p 25 --script=smtp-vuln* $ip </span>
+											</li>
+										</ul>
+									</li>
+									<li class="is-folder">SMB -
+										<span class="file-tree-description">SMB scripts</span>
+										<ul>
+											<li class="is-file">smb-vuln* -
+												<span class="file-tree-description">nmap -p 139,445 --script=smb-vuln* $ip</span>
+											</li>
+											<li class="is-file">smb-enum* -
+												<span class="file-tree-description">nmap -p 139,445 --script=smb-enum* $ip</span>
+											</li>
+											<li class="is-file">smb-brute.nse -
+												<span class="file-tree-description">nmap -p 139,445 --script=smb-brute.nse $ip</span>
+											</li>
+											<li class="is-file">smb-os-discovery.nse -
+												<span class="file-tree-description">nmap -p 139,445 --script=smb-os-discovery.nse $ip</span>
+											</li>
+											<li class="is-file">smb-os-discovery.nse -
+												<span class="file-tree-description">nmap -p 139,445 --script=smb-server-stats.nse $ip</span>
+											</li>
+											<li class="is-file">smb-double-pulsar-backdoor.nse -
+												<span class="file-tree-description">nmap -p 139,445 --script=smb-double-pulsar-backdoor.nse $ip</span>
 											</li>
 										</ul>
 									</li>
 									<li class="is-folder">SQL -
 										<span class="file-tree-description">SQL scripts</span>
 										<ul>
-											<li class="is-file">zeroclipboard.swf -
-												<span class="file-tree-description">necessitatibus pariatur facere a. soluta sint excepturi expedita corpori</span>
+											<li class="is-file">ms-sql* -
+												<span class="file-tree-description">nmap -p &lt;sqlport&gt; --script=ms-sql* $ip</span>
+											</li>
+											<li class="is-file">mysql* -
+												<span class="file-tree-description">nmap -p &lt;sqlport&gt; --script=mysql* $ip</span>
+											</li>
+											<li class="is-file">http-sql-injection.nse -
+												<span class="file-tree-description">nmap -p &lt;sqlport&gt; --script=http-sql-injection.nse $ip</span>
+											</li>
+											<li class="is-file">broadcast-ms-sql-discover.nse -
+												<span class="file-tree-description">nmap -p &lt;sqlport&gt; --script=broadcast-ms-sql-discover.nse $ip</span>
 											</li>
 										</ul>
 									</li>
-									<li class="is-file">index-1.html -
-										<span class="file-tree-description">quis cum ratione laboriosam ducimus iure voluptates quaerat si</span>
+									<li class="is-folder">http -
+										<span class="file-tree-description">HTTP scripts</span>
+										<ul>
+											<li class="is-file">http-vuln* -
+												<span class="file-tree-description">nmap -p 80 --script=http-vuln* $ip</span>
+											</li>
+											<li class="is-file">http-waf* -
+												<span class="file-tree-description">nmap -p 80 --script=http-waf* $ip</span>
+											</li>
+											<li class="is-file">http-wordpress* -
+												<span class="file-tree-description">nmap -p 80 --script=http-wordpress* $ip</span>
+											</li>
+											<li class="is-file">http-webdav-scan.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-webdav-scan.nse $ip</span>
+											</li>
+											<li class="is-file">http-sitemap-generator.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-sitemap-generator.nse $ip</span>
+											</li>
+											<li class="is-file">http-robots.txt.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-robots.txt.nse $ip</span>
+											</li>
+											<li class="is-file">http-shellshock.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-shellshock.nse $ip</span>
+											</li>
+											<li class="is-file">http-server-header.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-server-header.nse $ip</span>
+											</li>
+											<li class="is-file">http-security-headers.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-security-headers.nse $ip</span>
+											</li>
+											<li class="is-file">http-rfi-spider.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-rfi-spider.nse $ip</span>
+											</li>
+											<li class="is-file">http-referer-checker.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-referer-checker.nse $ip</span>
+											</li>
+											<li class="is-file">http-put.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-put.nse $ip</span>
+											</li>
+											<li class="is-file">http-phpmyadmin-dir-traversal.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-phpmyadmin-dir-traversal.nse $ip</span>
+											</li>
+											<li class="is-file">http-php-version.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-php-version.nse $ip</span>
+											</li>
+											<li class="is-file">http-passwd.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-passwd.nse $ip</span>
+											</li>
+											<li class="is-file">http-ntlm-info -
+												<span class="file-tree-description">nmap -p 80 --script=http-ntlm-info $ip</span>
+											</li>
+											<li class="is-file">http-methods.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-methods.nse $ip</span>
+											</li>
+											<li class="is-file">http-iis-short-name-brute.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-iis-short-name-brute.nse $ip</span>
+											</li>
+											<li class="is-file">http-iis-webdav-vuln.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-iis-webdav-vuln.nse $ip</span>
+											</li>
+											<li class="is-file">http-method-tamper.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-method-tamper.nse $ip</span>
+											</li>
+											<li class="is-file">http-headers.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-headers.nse $ip</span>
+											</li>
+											<li class="is-file">http-form-brute.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-form-brute.nse $ip</span>
+											</li>
+											<li class="is-file">http-fileupload-exploiter.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-fileupload-exploiter.nse $ip</span>
+											</li>
+											<li class="is-file">http-enum.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-enum.nse $ip</span>
+											</li>
+											<li class="is-file">http-drupal* -
+												<span class="file-tree-description">nmap -p 80 --script=http-drupal* $ip</span>
+											</li>
+											<li class="is-file">http-fileupload-exploiter.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-fileupload-exploiter.nse $ip</span>
+											</li>
+											<li class="is-file">http-config-backup.nse -
+												<span class="file-tree-description">nmap -p 80 --script=http-config-backup.nse $ip</span>
+											</li>
+										</ul>
 									</li>
-									<li class="is-file">index-2.html -
-										<span class="file-tree-description">omnis ipsa quas vel alias illum nostrum deleniti officiis</span>
+									<li class="is-file">nosCript -
+										<span class="file-tree-description">no script here</span>
 									</li>
-									<li class="is-file">index-3.html -
-										<span class="file-tree-description">libero et id laborum laboriosam dignissimos a! cum molestia</span>
-									</li>
-									<li class="is-file">... -
-										<span class="file-tree-description">quas provident minus, nisi excepturi culpa rerum voluptates e</span>
-									</li>
+
 								</ul>
 							</div>
 							<!-- End of FIle Tree -->
